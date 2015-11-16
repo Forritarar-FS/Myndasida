@@ -99,4 +99,25 @@ img {
 
 body {
   text-align: center;
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+form {
+  text-align: center;
+  color: #FFFFFF;
+}
+.SignUp {
+  float: right;
+}
+h1 {
+  text-align: center;
+  font-family: 'Exo';
+  color: #AAAAFF;
+}
+body {
+  background-image: url(http://i.imgur.com/c9HtRon.jpg);
+}
+.prompt{
+  font-family: 'Exo';
+  background-color: #000000;
+  color: #FFFFFF;
 }
