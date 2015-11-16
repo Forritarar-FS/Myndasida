@@ -4,3 +4,5 @@
 ## Aðrir notendur geta commentað á myndina.
 ## Eigandi myndarinnar getur eytt commentum sem hann vill ekki á myndina sína.
 ## Option til að fjarlægja myndina sína af síðunni.
+#login dæmi
+#chat síða
