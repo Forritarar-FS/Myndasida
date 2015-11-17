@@ -107,6 +107,12 @@ form {
 }
 .SignUp {
   float: right;
+  display: block;
+  top: 50px;
+}
+.LogIn {
+  float: right;
+  display: block;
 }
 h1 {
   text-align: center;
