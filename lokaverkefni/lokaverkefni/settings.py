@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
-
+AUTH_USER_MODEL = 'myndir.MyUser'
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
@@ -70,8 +70,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'lokaverkefni.wsgi.application'
-
-AUTHENTICATION_BACKENDS = ('myndir.backends.ClientAuthBackend', 'django.contrib.auth.backends.ModelBackend')
 
 
 # Database
