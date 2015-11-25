@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="myFunction()">Upphlaða</button>
+<script>
+var isrendered=false;
+  function myFunction() {
+    if(! isrendered){
+      var x = document.createElement("INPUT");
+      x.setAttribute("type", "file");
+      document.body.appendChild(x);
+      var x = document.createElement("INPUT");
+      x.setAttribute("type", "submit");
+      //x.setAttribute("action", "view í django");
+      document.body.appendChild(x);
+      isrendered = true;
+    }
+}
+</script>
+
+</body>
+</html>
