@@ -1,10 +1,8 @@
-app.controller('LoginController', ['$scope','login',
-function($scope, login) {
-  login.success(function(data) {
-    $scope.login = data;
+app.controller('LoginController', ['$scope', function($scope) {
+  $scope.greeting = 'Hola!';
+  document.body.style.background = "url(http://i.imgur.com/c9HtRon.jpg)";
 
     $scope.Submit = function(){
       alert("hallo");
     }
-  });
 }]);

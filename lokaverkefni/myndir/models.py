@@ -5,7 +5,7 @@ from django.contrib.auth.models import (
 
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, email, date_of_birth, password=None):
+    def create_user(self, email, dateofbirth, password=None):
         """
         Creates and saves a User with the given email, date of
         birth and password.
@@ -15,7 +15,7 @@ class MyUserManager(BaseUserManager):
 
         user = self.model(
             email=self.normalize_email(email),
-            date_of_birth=date_of_birth,
+            date_of_birth=dateofbirth,
         )
 
         user.set_password(password)
@@ -77,3 +77,14 @@ class MyUser(AbstractBaseUser):
         "Is the user a member of staff?"
 
         return self.is_admin
+
+class Photos(models.Model):
+    url = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
+    desc = models.CharField(max_length=500)
+    author = models.ForeignKey(MyUser)
+
+class Comments(models.Model):
+    photo = models.ForeignKey(Photos)
+    text = models.CharField(max_length=500)
+    author = models.ForeignKey(MyUser)
