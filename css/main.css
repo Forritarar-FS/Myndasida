@@ -11,10 +11,11 @@ h1.titill {
 }
 .head {
   font-weight: bold;
-  font-family: Georgia;
-  color: #192e28;
-  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+  font-size: 100px;
   text-align: center;
+  margin: 0;
 }
 
 #one {
@@ -142,6 +143,7 @@ h1.titill {
 div.post {
   border: double;
   border-radius: 20px;
+
   margin-left: auto;
   margin-right: auto;
   width: 50em;
@@ -153,15 +155,6 @@ div.titill {
   font-size: 40px;
 }
 
-img {
-  max-width: 500px;
-  max-height: 700px;
-}
-
-body {
-  text-align: center;
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 form {
   text-align: center;
   color: #FFFFFF;
@@ -182,9 +175,27 @@ h1 {
 }
 body {
   background-image: url(http://i.imgur.com/c9HtRon.jpg);
+  text-align: center;
+  @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+  @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 }
 .prompt{
   font-family: 'Exo';
   background-color: #000000;
   color: #FFFFFF;
 }
+td {
+  background-color: #181817;
+  border: 2px solid #444442;
+  display: inline-block;
+  margin: 4px 2px;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  line-height: 0;
+  }
