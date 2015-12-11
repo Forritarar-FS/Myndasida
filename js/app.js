@@ -1,8 +1,19 @@
-  console.log("hello")
-var app = angular.module('myLoginApp', ['ngRoute']).config(['$routeProvider','$locationProvider',
-  function($routeProvider, $locationProvider) {
-      $routeProvider
-      .when('/login', {
+var app = angular.module('MyndaApp', ['ngRoute']);
+app.config(function ($routeProvider) {
+  $routeProvider
+    .when('/', {
+      controller: "MainController",
+      templateUrl: "views/homepage.html"
+    })
+    .when('/comment/:id', {
+      controller: 'CommentController',
+      templateUrl: 'views/comment.html'
+    })
+    .when('LINKFYRIRLOGINDOITLATERYOUSEXYBABES', {
+      controller: 'LoginController',
+      templateUrl: 'views/login.html'
+    })
+    .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginController'
       })
@@ -18,14 +29,8 @@ var app = angular.module('myLoginApp', ['ngRoute']).config(['$routeProvider','$l
         controller: "MainController",
         templateUrl: "views/homepage.html"
       })
-      .when('/comment/:id', {
-        controller: 'CommentController',
-        templateUrl: 'views/comment.html'
-      })
       .otherwise({
-        redirectTo: '/login'
-      });
-  }]);
-  console.log("hello")
-  console.log("hello")
->>>>>>> aa2ac3a34038a3cc6a7afa75026d8ed9111c3aba
+        redirectTo: '/'
+    });
+});
+  
