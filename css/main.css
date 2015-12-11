@@ -11,17 +11,15 @@ h1.titill {
 }
 .head {
   font-weight: bold;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  color: black;
-  font-size: 100px;
+  font-family: Georgia;
+  color: #192e28;
+  font-size: 20px;
   text-align: center;
-  margin: 0;
 }
 
 #one {
   text-align: center;
 }
-
 div.post {
   border: double;
   border-radius: 20px;
